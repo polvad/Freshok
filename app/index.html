@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ФРЕШОК Главная страница</title>
+  <title>ФРЕШОК | Главная страница</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Ruda:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -14,7 +14,320 @@
 </head>
 
 <body>
-  
-</body>
 
+    <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <nav class="header__nav">
+        <ul class="header__info">
+          <li class="header__info-item">
+            <a class="header__info-link" href="#">
+              <svg class="header__info-icon" width="32px" height="21px">
+                <use xlink:href="images/sprite.svg#icon-delivery"></use>
+              </svg>
+              адрес и время доставки
+            </a>
+          </li>
+          <li class="header__info-item">
+            <a class="header__info-link" href="#">
+              <svg class="header__info-icon" width="22px" height="22px">
+                <use xlink:href="images/sprite.svg#icon-tel"></use>
+              </svg>
+              горячая линия 24/7
+            </a>
+          </li>
+        </ul>
+
+        <ul class="header__menu">
+          <li class="header__item">
+            <a class="text-link" href="#">ДОСТАВКА</a>
+          </li>
+          <li class="header__item">
+            <a class="text-link" href="#">О НАС</a>
+          </li>
+          <li class="header__item">
+            <a class="text-link" href="#">НОВОСТИ</a>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/icons/svg/logo.svg" width="200px" height="60px"
+            alt="Логотип онлайн-маркета Фрешок">
+        </a>
+        <div class="catalog-products">
+          <button class="catalog-products__btn">
+            <svg class="catalog-products__icon" width="25px" height="17px">
+              <use xlink:href="images/sprite.svg#icon-menu"></use>
+            </svg>
+            Каталог продуктов
+            <svg class="catalog-products__icon catalog-products__icon--rotate" width="10px" height="18px">
+              <use xlink:href="images/sprite.svg#icon-arrowmenu"></use>
+            </svg>
+          </button>
+          <ul class="catalog-products__list">
+            <li class="catalog-products__item">
+              <a class="catalog-products__link" href="#">Овощи и фрукты</a>
+            </li>
+            <li class="catalog-products__item">
+              <a class="catalog-products__link" href="#">Бакалея</a>
+            </li>
+            <li class="catalog-products__item">
+              <a class="catalog-products__link" href="#">Молочные продукты</a>
+            </li>
+            <li class="catalog-products__item">
+              <a class="catalog-products__link" href="#">Хлеб</a>
+            </li>
+            <li class="catalog-products__item">
+              <a class="catalog-products__link" href="#">Мясо</a>
+            </li>
+            <li class="catalog-products__item">
+              <a class="catalog-products__link" href="#">Колбаса</a>
+            </li>
+            <li class="catalog-products__item">
+              <a class="catalog-products__link" href="#">Рыба</a>
+            </li>
+            <li class="catalog-products__item">
+              <a class="catalog-products__link" href="#">Алкоголь</a>
+            </li>
+            <li class="catalog-products__item">
+              <a class="catalog-products__link" href="#">Напитки</a>
+            </li>
+            <li class="catalog-products__item">
+              <a class="catalog-products__link" href="#">Торты</a>
+            </li>
+            <li class="catalog-products__item">
+              <a class="catalog-products__link" href="#">Мясо</a>
+            </li>
+            <li class="catalog-products__item">
+              <a class="catalog-products__link" href="#">Чай, кофе</a>
+            </li>
+          </ul>
+        </div>
+        <form class="form-search" action="#" name="search">
+
+          <svg class="form-search__icon" width="20px" height="20px">
+            <use xlink:href="images/sprite.svg#icon-search"></use>
+          </svg>
+          <label class="form-search__label">
+            <input class="form-search__input" type="search" placeholder="Найти в магазине ..." required>
+            <button class="form-search__btn">
+              поиск
+            </button>
+          </label>
+        </form>
+        <ul class="user-nav">
+          <li class="user-nav__item">
+            <button class="user-nav__btn">
+              <svg class="user-nav__icon" width="24px" height="32px">
+                <use xlink:href="images/sprite.svg#icon-user"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="user-nav__item">
+            <button class="user-nav__btn">
+              <svg class="user-nav__icon" width="32px" height="30px">
+                <use xlink:href="images/sprite.svg#icon-heart"></use>
+              </svg>
+              <span class="user-nav__order">12</span>
+            </button>
+          </li>
+          <li class="user-nav__item">
+            <button class="user-nav__btn">
+              <svg class="user-nav__icon" width="32px" height="30px">
+                <use xlink:href="images/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="user-nav__order">12</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+</header>
+
+    <main class="main">
+        <section class="slider-top">
+  <ul class="slider-top__list">
+
+    <li class="slider-top__item" >
+      <div class="slider-top__inner" style="background-image: url('./images/sliderbg1.jpg');">
+        <div class="slider-top__content">
+          <p class="slider-top__lead">
+            свежачок вам в хату
+            <span class="slider-top__action">
+              скидка -50%
+            </span>
+          </p>
+          <p class="slider-top__text">
+            Только с 7 по 13 июля скидка на сезонные фрукты и овощи до 50%. Торопитесь!
+          </p>
+          <a class="link-boy" href="#">
+            Купить сейчас
+          </a>
+        </div>
+      </div>
+
+
+
+    </li>
+    <li class="slider-top__item" >
+      <div class="slider-top__inner" style="background-image: url('./images/sliderbg2.jpg');">
+        <div class="slider-top__content">
+          <p class="slider-top__lead">
+            накрути себе томатов
+            <span class="slider-top__action">
+              акция: 3 кг по цене 1
+            </span>
+          </p>
+          <p class="slider-top__text">
+            Только с 12 по 15 июля скидка на домашние помидорчики
+          </p>
+          <a class="link-boy" href="#">
+            Купить сейчас
+          </a>
+        </div>
+      </div>
+
+
+
+    </li>
+    <li class="slider-top__item" >
+      <div class="slider-top__inner" style="background-image: url('./images/sliderbg3.jpg');">
+        <div class="slider-top__content">
+          <p class="slider-top__lead">
+            Пусть остальные позеленеют от зависти
+            <span class="slider-top__action">
+              Распродажа зелени
+            </span>
+          </p>
+          <a class="link-boy" href="#">
+            Купить сейчас
+          </a>
+        </div>
+      </div>
+
+    </li>
+  </ul>
+</section>
+        
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <a class="logo" href="#">
+      <img class="logo__img" src="./images/icons/svg/logo.svg" alt="Логотип онлайн-маркета Фрешок">
+    </a>
+    <div class="footer__inner">
+      <form class="form-subscription" name="subscription" action="#">
+        <label class="form-subscription__label" for="search">
+          Следите за нашими акциями
+        </label>
+        <div class="form-subscription__body">
+          <input class="form-subscription__feild" type="search" id="search" name="search" placeholder="email@email.com"
+            required>
+          <button class="form-subscription__btn link-boy" type="submit">
+            подписаться
+          </button>
+        </div>
+      </form>
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="text-link" href="#">О нас</a>
+          </li>
+          <li class="footer__item">
+            <a class="text-link" href="#">Контакты</a>
+          </li>
+          <li class="footer__item">
+            <a class="text-link" href="#">Публичная оферта</a>
+          </li>
+          <li class="footer__item">
+            <a class="text-link" href="#">Оплата и доставка</a>
+          </li>
+          <li class="footer__item">
+            <a class="text-link" href="#">Вакансии</a>
+          </li>
+          <li class="footer__item">
+            <a class="text-link" href="#">Акции</a>
+          </li>
+          <li class="footer__item">
+            <a class="text-link" href="#">Отзывы</a>
+          </li>
+          <li class="footer__item">
+            <a class="text-link" href="#">Новости</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="address">
+        <ul class="address__list">
+          <li class="address__item">
+            Горячая линия:
+            <a class="address__link text-link" href="tel:+380501112233">
+              +38 050 111 22 33
+            </a>
+          </li>
+          <li class="address__item">
+            <a class="address__link text-link" href="#">
+              Запорожье, ул. Т.Г. Шевченко, 1
+            </a>
+          </li>
+        </ul>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="22px" height="32px">
+                <use xlink:href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="32px" height="28px">
+                <use xlink:href="./images/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="28px" height="27px">
+                <use xlink:href="./images/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="26px" height="26px">
+                <use xlink:href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </address>
+    </div>
+    <div class="copy">
+      <span class="copy__text">
+        © 2022 ФРЕШОК
+      </span>
+      <ul class="copy__list">
+        <li class="copy__item copy__item--visa"></li>
+        <li class="copy__item copy__item--master"></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <script src="./js/main.min.js"></script>
+
+  </body>
 </html>

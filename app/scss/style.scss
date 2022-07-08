@@ -1,17 +1,11 @@
-@import 'fonts';
 @import 'reset';
 @import 'libs';
 @import 'vars';
 @import 'global';
 
 
-@import './components/header';
+@import 'components/header';
+@import 'components/slider-top';
+@import 'components/benefits';
 
-
-@import './components/hero';
-
-
-@import './components/popular';
-
-
-@import './components/footer';
+@import 'components/footer';

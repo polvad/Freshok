@@ -1,31 +1,36 @@
-$( function() {
-  
-  $('.button-search').on('click', function(){
-    $('.form-search').toggleClass('active');
+$(function () {
+
+  $('.catalog-products__btn').on('click', function () {
+    $('.catalog-products__list').slideToggle('slow');
+    $(this).toggleClass('active');
+  });
+  $('.catalog-products__link').on('click', function () {
+    $('.catalog-products__list').slideUp('slow');
+    $('.catalog-products__btn').removeClass('active');
   });
 
-  $('.button-basket').on('click', function(){
-    $('.basket').toggleClass('active');
-  });
-
-  $('.close').on('click', function(){
-    $('.basket').removeClass('active');
-  });
-  
-  $('.restaurant__catalog').slick({
-    arrows: false,
-    dots: true,
-    slidesToShow: 3,
-    rows: 2,
-  });
-
-  $('.reviews__list').slick({
+  $('.slider-top__list').slick({
     arrows: true,
-    dots: true,
-  
+    autoplay: true,
+    speed:	1500,
+    pauseOnHover: false,
+    responsive: [{
+      breakpoint: 1550,
+        settings: {
+          arrows: false,
+        }
+    }
+  ] 
+   
   });
 
 
-  var mixer = mixitup('.popular__category');
+
+
+
+
+
+
+
 
 });

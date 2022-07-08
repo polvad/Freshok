@@ -2,10 +2,11 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
-  line-height: 1.5;
-  // color: ;
-  // background-color: ;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $dark-900;
+  background-color: $white;
   display: flex;
   flex-direction: column;
 }
@@ -13,17 +14,18 @@ body {
 // font-family: 'Ruda', sans-serif;
 
 .container {
-  max-width: 1200px;
+  max-width: 1320px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.section {
-
-}
-
 .title {
-
+  font-family: 'Ruda', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .main {
@@ -41,4 +43,46 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.text-link {}
+
+.link-boy {
+  padding: 12px 24px;
+  border-radius: 6px;
+  background-color: $green-900;
+  color: $white;
+  transition: background-color 0.5s, box-shadow 0.5, outline 0.5s;
+
+  &:hover {
+    background-color: #4D810C;
+  }
+
+  &:focus {
+    outline: 4px solid $green-200;
+  }
+
+  &:active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+}
+
+.link-show {
+  background-color: $white;
+  color: $green-900;
+  border: 1px solid $green-900;
+  transition: background-color 0.5s, box-shadow 0.5;
+
+  &:hover {
+    background-color: $green-100;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 4px rgba(99, 166, 14, 0.5);
+  }
+
+  &:active {
+    box-shadow: inset 0px 10px 4px rgba(0, 0, 0, 0.1);
+  }
 }
